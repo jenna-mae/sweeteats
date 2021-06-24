@@ -1,0 +1,275 @@
+h1 {
+    font-size: 26px;
+    color: #534741;
+    padding: 50px 0px;
+    text-transform: uppercase;
+    font-weight: 400;
+    text-align: center;
+}
+
+.item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.item .image {
+    width: 40%;
+    position: relative;
+}
+
+.item .image span {
+    position: absolute;
+    top: -4px;
+    right: -4px;
+    background-color: rosybrown;
+    color: white;
+    border-radius: 12px;
+    text-align: center;
+    padding: 2px 6px;
+    font-size: 12px;
+}
+
+.item .details {
+    width: 60%;
+}
+
+.cart .item h2 {
+    font-size: 14px;
+}
+
+.cart .adjustQty {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cart .details {
+    padding-left: 20px;
+}
+
+.cart .price {
+    padding: 8px 0px;
+}
+
+.cart button {
+    background-color: transparent;
+    border: none;
+    color: #534741;
+}
+
+.remove a {
+    font-size: 12px;
+    color: #534741;
+    border-bottom: 1px solid #534741;
+}
+
+.options input {
+    width: 40px;
+    text-align: center;
+}
+
+h2 {
+    font-weight: 400;
+}
+
+.orderSummary {
+    background-color: rgb(244, 242, 242);
+    padding: 20px 0px;
+}
+
+.checkout h2 {
+    font-size: 18px;
+}
+
+.checkout header p {
+    font-size: 14px;
+    font-weight: 300;
+    padding-top: 6px;
+}
+
+.checkoutStep {
+    padding-bottom: 40px;
+}
+
+.checkoutForm .fieldset {
+    padding: 10px 0px;
+}
+
+.checkoutForm input, select {
+    border: 1px solid #E8DFD9;
+    border-radius: 4px;
+    width: 100%;
+    padding: 10px;
+    color: #534741;
+}
+
+.checkoutForm input[type="submit"] {
+    border: none;
+}
+
+.displayOrder {
+    display: none;
+}
+
+.returnToCart {
+    padding: 20px 0px;
+}
+
+.returnToCart a {
+    color: #534741;
+    text-decoration: underline;
+}
+
+.displayOrder .image {
+    width: 30%;
+}
+
+.displayOrder .details {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+}
+
+.displayOrder .item {
+    padding-bottom: 20px;
+}
+
+.displayOrder .item p {
+    font-size: 14px;
+    padding-left: 6px;
+}
+
+.subtotal {
+    border-top: 1px solid #E8DFD9;
+    border-bottom: 1px solid #E8DFD9;
+    padding: 20px 0px;
+}
+
+.total p{
+    padding-top: 20px;
+}
+
+.priceFlex {
+    display: flex;
+    justify-content: space-between;
+    padding: 6px 0px;
+}
+
+#cart .ctaPrimary {
+    float: right;
+}
+
+#cart .ctaPrimary a {
+    display: block;
+}
+
+a.empty {
+    padding-top: 10px;
+    font-size: 13px;
+    color: #534741;
+    text-decoration: underline;
+}
+
+p.error {
+    text-align: center;
+    padding-bottom: 20px;
+    font-weight: 200;
+}
+
+@media screen and (min-width: 500px) {
+    form.checkoutForm {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .cartPage {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .cartContents {
+        width: 52%;
+        margin: 0 auto;
+    }
+
+    .pricing {
+        width: 36%;
+        padding-top: 120px;
+    }
+
+    form.checkoutForm {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .checkoutForm input, select {
+        padding: 14px;
+    }
+
+    .shipping, .payment, .makeAccount {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .full {
+        width: 100%;
+    }
+
+    .half {
+        width: 48%;
+    }
+
+    .third {
+        width: 31.33%
+    }
+
+    .quarter {
+        width: 23%;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .yourOrder {
+        display: none;
+    }
+
+    .displayOrder {
+        display: block;
+    }
+
+    .orderSummary {
+        width: 40%;
+        padding-top: 40px;
+    }
+
+    .checkout {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .checkout h2, .checkout header p {
+        padding-bottom: 10px;
+    }
+
+    .checkout h2.noPadding {
+        padding-bottom: 0px;
+    }
+
+    .contactInfo {
+        width: 60%;
+    }
+
+    #cart .wrapper {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .cart .item .image {
+        width: 30%;
+    }
+}

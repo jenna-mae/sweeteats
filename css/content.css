@@ -1,0 +1,169 @@
+.largeWrapper {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.content h1 {
+    padding: 50px 0px;
+    font-weight: 400;
+    font-size: 26px;
+    text-transform: uppercase;
+    color: #534741;
+    text-align: center;
+}
+
+header {
+    width: 100%;
+}
+
+.sectionContent {
+    padding: 80px 0px;
+}
+
+.sectionContent h2 {
+    font-weight: 400;
+    font-size: 24px;
+    color: rosybrown;
+    padding: 20px 0px;
+}
+
+.sectionContent p {
+    font-size: 14px;
+    padding-bottom: 30px;
+    color: #534741;
+    font-family: 'Merriweather', serif;
+    font-weight: 300;
+    line-height: 24px;
+}
+
+span.step {
+    color: #6699CC;
+    font-size: 42px;
+    font-weight: 700;
+}
+
+.sectionContent img {
+    height: 120px;
+    margin: 30px 0px;
+}
+
+.sectionImage img {
+    height: 100%;
+    object-fit: cover;
+}
+
+/**** About ****/
+
+.about .sectionContent {
+    text-align: left;
+    align-items: flex-start;
+}
+
+.about .sectionContent h2 {
+    color: rosybrown;
+    font-weight: 600;
+    padding: 0px 0px 20px;
+}
+
+.about .sectionContent p {
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.about .sectionImage img {
+    height: auto;
+}
+
+/*** CTA BANNER *****/
+
+
+
+@media screen and (min-width: 700px) {
+    .sectionContent {
+        width: 65%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 800px) {
+
+    .sections {
+        margin-bottom: 40px;
+    }
+
+    .section {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 40px;
+    }
+
+    .section:last-child {
+        margin-bottom: 0px;
+    }
+
+    .section:nth-child(even) {
+        flex-direction: row-reverse;
+    }
+
+    .sectionImage {
+        width: 42%;
+        height: 90%;
+    }
+
+    .sectionContent {
+        padding: 0px 0px 0px 80px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 55%;
+    }
+
+    .section:nth-child(even) .sectionContent {
+        padding: 0px 80px 0px 0px;
+    }
+
+    .sectionContent h2 {
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    .sectionContent p {
+        font-size: 12px;
+        padding-bottom: 0px;
+    }
+
+    .sectionContent img {
+        height: 70px;
+    }
+
+    /*** ABOUT ***/
+
+    .about .sectionContent p {
+        font-size: 12px;
+        line-height: 24px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .sectionImage {
+        width: 45%;
+    }
+
+    .sectionContent {
+        width: 55%;
+        padding: 0px 40px 0px 140px;
+    }
+
+    .section:nth-child(even) .sectionContent {
+        padding: 0px 140px 0px 40px;
+    }
+
+    .sectionContent h2 {
+        font-size: 20px;
+    }
+
+    .sectionContent p, .about .sectionContent p {
+        font-size: 14px;
+        line-height: 26px;
+    }
+}

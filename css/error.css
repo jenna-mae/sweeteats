@@ -1,0 +1,16 @@
+.errorContainer {
+    height: 100vh;
+    background-color: rgb(244, 242, 242);
+    padding: 40px
+}
+
+.errorContainer p {
+    font-size: 18px;
+}
+
+.errorContainer a {
+    color: #534741;
+    text-decoration: underline;
+    padding-top: 10px;
+    display: block;
+}

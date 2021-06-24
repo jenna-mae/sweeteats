@@ -1,0 +1,20 @@
+.fieldset .displayError {
+    border: 1px solid #b42e25;
+}
+
+.fieldset .errorMsg {
+    display: none;
+    padding: 6px 0px;
+    opacity: 0;
+}
+
+.fieldset.displayErrorMsg .errorMsg {
+    display: inline-block;
+    opacity: 1;
+    transition: opacity 1s linear;
+}
+
+.fieldset .errorMsg span {
+    color: #b42e25;
+    font-size: 12px;
+}

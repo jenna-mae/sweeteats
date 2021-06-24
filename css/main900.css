@@ -1,0 +1,124 @@
+@media screen and (min-width: 900px){
+    .hero header {
+        padding: 0px;
+    }
+
+    .hero header p {
+        font-size: 17px;
+    }
+
+    .banner {
+        padding: 100px 0px;
+    }
+
+    .banner h2 {
+        padding-bottom: 60px;
+        width: 60%;
+    }
+
+    .banner p {
+        font-size: 12px;
+        line-height: 18px;
+        padding: 0px 100px 30px;
+    }
+
+    span.step {
+        font-size: 32px;
+    }
+
+    .flexBlock {
+        margin-bottom: 0px;
+    }
+
+    .flexBlock.insta {
+        margin-bottom: 20px;
+    }
+
+    .flexBlock:last-child {
+        margin-bottom: 0px;
+    }
+
+    .flex.categories {
+        height: 60vh;
+    }
+
+    .thumbnail.cat {
+        width: 18%;
+        height: 80%;
+    }
+
+    .thumbnail:hover a.cursive {
+        transition: all .2s linear;
+        font-size: 52px;
+    }
+
+    .thumbnail:hover a.cursive.overlay {
+        background-color: rgba(255, 255, 255, .6);
+    }
+
+    .flexBlock.insta {
+        width: 19%;
+    }
+
+    .contentBanner .flexBlock {
+        width: 50%;
+    }
+
+    .contentBanner .flexBlock img, .thumbnail.cat img {
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .flex.howItWorks {
+        justify-content: space-between;
+    }
+
+    .flex.howItWorks .flexBlock {
+        width: 20%;
+    }
+
+    .howItWorks img {
+        height: 80px;
+    }
+
+    .banner h3 {
+        font-size: 18px;
+    }
+
+    .banner .howItWorks p {
+        padding: 0px;
+    }
+
+    .fullWidth .wrapper {
+        padding: 0px;
+    }
+
+    .banner.fullWidth {
+        padding: 0px;
+    }
+
+    .flex.contentBanner {
+        flex-direction: row-reverse;
+    }
+
+    .show-l {
+        display: block;
+    }
+
+    .hide-l {
+        display: none;
+    }
+
+    .textContent {
+        padding: 0px 60px;
+        align-self: center;
+    }
+
+    .banner .contentBanner p {
+        line-height: 22px;
+    }
+
+    .banner.cat .ctaPrimary {
+        margin-top: 0px;
+    }
+}

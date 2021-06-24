@@ -1,0 +1,50 @@
+@media screen and (min-width: 1200px) {
+    .hero header h1 {
+        font-size: 40px;
+        line-height: 52px;
+    }
+
+    .hero header p {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .wrapper, .topBanner .wrapper {
+        padding: 0px 120px;
+    }
+
+    .howItWorks img {
+        height: 100px;
+        margin: 40px 0px;
+    }
+
+    .banner h3 {
+        font-size: 20px;
+    }
+
+    a.primary {
+        padding: 14px 32px;
+        font-size: 16px;
+    }
+
+    .banner p {
+        padding: 0px 120px 30px;
+    }
+
+    .textContent {
+        padding: 0px 120px;
+    }
+
+    .textContent h1 {
+        font-size: 23px;
+    }
+
+    .textContent p{
+        font-size: 13px;
+        line-height: 22px;
+    }
+
+    span.highlight {
+        font-size: 14px;
+    }
+}

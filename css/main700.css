@@ -1,0 +1,56 @@
+@media screen and (min-width: 700px){
+
+    .hero header h1 {
+        font-weight: 500;
+    }
+    
+    .hero header p {
+        padding: 22px 60px 30px;
+    }
+
+    .wrapper {
+        padding: 0px 80px;
+    }
+
+    .topBanner .wrapper {
+        padding: 0px 60px;
+    }
+
+    .banner h2 {
+        font-size: 14px;
+        font-weight: 300;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .banner p {
+        padding: 0px 40px 30px;
+        line-height: 22px;
+    }
+
+    .thumbnail {
+        width: 31%;
+    }
+
+    .flexBlock:last-child {
+        margin-bottom: 20px;
+    }
+
+    .flex {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .howItWorks .flexBlock {
+        width: 47%;
+    }
+
+    .flexBlock.marginNull {
+        margin-bottom: 0px;
+    }
+
+    .cta {
+        width: 90%;
+        margin: 0 auto;
+    }
+}

@@ -1,0 +1,48 @@
+.ctaBanner {
+    text-align: center;
+    padding: 16px;
+    background-color: #6699CC;
+    width: 85%;
+    margin: 0 auto;
+}
+
+.outline {
+    background-color: white;
+    padding: 40px;
+}
+
+.content .ctaBanner h1 {
+    font-weight: 400;
+    font-size: 22px;
+    color: #534741;
+    padding: 0px;
+    text-transform: uppercase;
+}
+
+.content .ctaBanner p {
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 24px;
+    padding: 24px 0px;
+    color: #BC9362;
+    font-family: 'Merriweather', serif;
+}
+
+@media screen and (min-width: 800px) {
+    .ctaBanner {
+        margin-top: 40px;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .outline {
+        padding: 40px 60px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .ctaBanner {
+        width: 60%;
+        margin: 0 auto;
+    }
+}

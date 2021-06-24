@@ -1,0 +1,370 @@
+.login {
+    width: 100%;
+}
+
+h1 {
+    font-size: 26px;
+    padding: 50px 0px;
+    text-transform: uppercase;
+    font-weight: 400;
+    text-align: center;
+    color: #534741;
+}
+
+.login h1 {
+    padding-top: 0px;
+}
+
+.fieldset label {
+    font-size: 12px;
+}
+
+.fieldset label {
+    color: #534741;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+
+a.forgotPass {
+    font-size: 12px;
+    text-decoration: underline;
+    float: right;
+    color: #534741;
+}
+
+.login .formContents {
+    padding: 80px 40px;
+}
+
+.login .fieldset {
+    padding: 10px 0px;
+}
+
+.login .fieldset input {
+    width: 100%;
+    padding: 6px;
+    margin-top: 6px;
+    border: 1px solid #E8DFD9;
+}
+
+.login input[type="submit"] {
+    background-color: #6699CC;
+    color: white;
+    padding: 10px 16px;
+    border: none;
+    margin-top: 10px;
+    width: 100%;
+    width: 50%;
+    float: none;
+}
+
+.login .submit {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.login .submit p {
+    display: inline-block;
+    font-size: 13px;
+    color: #534741;
+}
+
+.login .submit p a {
+    padding-left: 6px;
+    text-decoration: underline;
+    color: #534741;
+}
+
+.account h1 {
+    padding-top: 40px;
+}
+
+.account h2 {
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.account .banner {
+    border-bottom: 1px solid #E8DFD9;
+    padding: 20px 0px;
+}
+
+.orderHistory {
+    border-bottom: 1px solid #E8DFD9;
+    padding-bottom: 20px;
+}
+
+.details {
+    padding-top: 20px;
+}
+
+.details a.secondary {
+    font-size: 12px;
+    border-bottom: none;
+    font-style: italic;
+    font-weight: 400;
+    text-decoration: underline;
+    text-decoration-color: transparent;
+}
+
+.details a.secondary:hover {
+    text-decoration-color: #6699CC;
+    transition: all .4s ease;
+}
+
+.details p {
+    padding-bottom: 6px;
+}
+
+.account h3 {
+    font-size: 17px;
+    font-weight: 400;
+    padding-bottom: 10px;
+}
+
+.account p {
+    font-size: 14px;
+    font-weight: 200;
+    line-height: 20px;
+}
+
+.order {
+    display: flex;
+    justify-content: space-between;
+    padding: 6px 0px;
+}
+
+.order span {
+    font-weight: 400;
+    padding: 0px 10px;
+}
+
+.order a {
+    padding-left: 20px;
+    color: #6699CC;
+    font-style: italic;
+    font-size: 14px;
+    text-decoration: underline;
+    text-decoration-color: transparent;
+}
+
+.order a:hover {
+    text-decoration-color: #6699CC;
+    transition: all .4s ease;
+}
+
+.recents {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.recent  {
+    width: 48%;
+    padding-right: 10px;
+    padding-top: 10px;
+}
+
+.userForm input, select {
+    padding: 12px;
+    border: 1px solid #E8DFD9;
+    width: 100%;
+    color: #534741;
+}
+
+.userForm .fieldset {
+    padding: 12px 0px;
+}
+
+.userForm .fieldsets {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.userForm .full {
+    width: 100%;
+}
+
+.userForm .half {
+    width: 48%;
+}
+
+.submit {
+    width: 100%;
+}
+
+.userForm input[type="submit"].primary {
+    padding: 14px 32px;
+    font-size: 13px;
+    width: 48%;
+    float: right;
+    border: none;
+}
+
+a.back {
+    padding-top: 20px;
+    color: #534741;
+    display: block;
+    font-size: 12px;
+    text-decoration: underline;
+}
+
+.item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.item .image {
+    width: 40%;
+    position: relative;
+}
+
+.item .image span {
+    position: absolute;
+    top: -4px;
+    right: -4px;
+    background-color: rosybrown;
+    color: white;
+    border-radius: 12px;
+    text-align: center;
+    padding: 2px 6px;
+    font-size: 12px;
+}
+
+.orderInfo h3 {
+    padding: 10px 0px;
+}
+
+.displayOrder h4 {
+    font-weight: 400;
+    padding: 20px 0px;
+    font-size: 16px;
+    text-decoration: underline;
+}
+
+.orderInfo span {
+    padding-left: 8px;
+    font-weight: 300;
+}
+
+a.goBack {
+    font-size: 12px;
+    text-decoration: underline;
+    color: #534741;
+}
+
+.logout a {
+    padding-top: 20px;
+    color: #534741;
+    text-decoration: underline;
+    font-style: italic;
+    display: block;
+}
+
+.checkoutSuccess {
+    padding-top: 20px;
+    color: rosybrown;
+}
+
+.checkoutSuccess p {
+    text-decoration: underline;
+    font-size: 18px;
+    font-weight: 400;
+    padding-bottom: 20px;
+}
+
+#password .reset .formContents {
+    text-align: center;
+}
+
+#password .reset a.reset {
+    color: #534741;
+    text-decoration: underline;
+    display: block;
+    padding-top: 20px;
+}
+
+@media screen and (min-width: 700px) {
+
+    .login .formContents {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .manageAccount .wrapper {
+        padding: 0px 100px;
+    }
+
+    .accountInfo {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .orderHistory {
+        border-bottom: none;
+        padding-bottom: 0px;
+    }
+    
+    .details {
+        padding-top: 0px;
+        padding-right: 80px;
+    }
+    
+    .details a.secondary {
+        font-size: 12px;
+        border-bottom: none;
+        font-style: italic;
+        font-weight: 400;
+    }
+    
+    .recent  {
+        width: 23%;
+        padding-right: 40px;
+        padding-top: 6px;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .login .formContents {
+        width: 55%;
+        margin: 0 auto;
+    }
+
+    .manageAccount .wrapper {
+        padding: 0px 160px;
+    }
+
+    .userForm input[type="submit"].primary {
+        width: 40%
+    }
+}
+
+@media screen and (min-width: 1000px) {
+
+    .manageAccount .wrapper {
+        padding: 0px 260px;
+    }
+
+    .login .formContents {
+        width: 40%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+    .manageAccount .wrapper {
+        padding: 0px 320px;
+    }
+
+    .userForm input[type="submit"].primary {
+        width: 30%
+    }
+
+    .userForm .full {
+        width: 48%;
+    }
+}

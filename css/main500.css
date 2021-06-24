@@ -1,0 +1,33 @@
+@media screen and (min-width: 500px){
+    .topBanner .wrapper {
+        padding: 0px 100px;
+    }
+    
+    .hero header {
+        width: 70%;
+    }
+
+    .hero header h1 {
+        line-height: 38px;
+        font-size: 32px;
+    }
+
+    .hero header p {
+        padding: 22px 0px 30px;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 22px;;
+    }
+
+    .wrapper {
+        padding: 0px 60px;
+    }
+
+    .flexBlock.insta {
+        width: 32%;
+    }
+
+    .show-m {
+        display: block;
+    }
+}

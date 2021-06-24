@@ -1,0 +1,206 @@
+.hero {
+    background-image: url("../imgs/hero-crop.jpg");
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+    height: 95vh;
+    position: relative;
+}
+
+.hero .overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, .2)
+}
+
+.hero header {
+    width: 78%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    margin-top: 40px;
+    color: #615342;
+}
+
+.hero header h1 {
+    font-size: 28px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.hero header p {
+    padding: 22px 0px;
+    font-size: 16px;
+    line-height: 22px;
+    font-family: 'Merriweather', serif;
+    font-weight: 300;
+}
+
+.hero .readMore {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%,0%);
+    text-align: center;
+}
+
+.hero .readMore:hover {
+    bottom: 8px;
+    transition: bottom .2s linear;
+}
+
+.hero .readMore:hover img {
+    height: 18px;
+    transition: height .2s linear;
+}
+
+.hero .readMore:hover span {
+    font-size: 14px;
+    transition: all .2s linear;
+}
+
+.hero .readMore img {
+    height: 16px;
+    margin-top: 6px;
+}
+
+.hero .readMore span {
+    font-size: 12px;
+    font-weight: 500;
+    color: #4d4d4d;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex.categories {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.flexBlock {
+    margin-bottom: 60px;
+}
+
+.flexBlock:last-child {
+    margin-bottom: 0px;
+}
+
+.banner {
+    text-align: center;
+    padding: 80px 0px;
+    border-top: 1px solid #E8DFD9;
+}
+
+.banner h1 {
+    padding-bottom: 30px;
+    font-weight: 400;
+    font-size: 26px;
+    text-transform: uppercase;
+    color: #534741;
+}
+
+.banner:first-child h1 {
+    border-top: 0px;
+    padding-bottom: 20px;
+}
+
+.banner h2 {
+    font-size: 14px;
+    padding-bottom: 40px;
+    font-weight: 300;
+    font-family: 'Merriweather', serif;
+    line-height: 26px;
+}
+
+.banner h3 {
+    font-weight: 400;
+    font-size: 24px;
+    color: rosybrown;
+    padding-bottom: 20px;
+}
+
+.banner p {
+    font-size: 14px;
+    padding-bottom: 30px;
+    color: #534741;
+    font-family: 'Merriweather', serif;
+    font-weight: 300;
+    line-height: 24px;
+}
+
+.banner .ctaPrimary {
+    margin-top: 40px;
+}
+
+span.step {
+    color: #6699CC;
+    font-size: 42px;
+    font-weight: 700;
+}
+
+span.step h3 {
+    color: #6699CC;
+}
+
+.howItWorks img {
+    height: 100px;
+    margin: 30px 0px;
+}
+
+.thumbnail {
+    position: relative;
+    margin-bottom: 20px;
+    width: 48%;
+}
+
+.thumbnail a {
+    font-weight: 700;
+    font-size: 42px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #534741;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding: 0px 20px;
+}
+
+a.cursive.overlay {
+    background-color: rgba(255, 255, 255, .2);
+}
+
+a.instagram:hover{
+    background-color: rgba(255, 255, 255, .3)
+}
+
+.flexBlock.insta {
+    width: 48%;
+}
+
+.instagramBanner {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.show-m, .show-l {
+    display: none;
+}
+
+.contentBanner {
+    text-align: left;
+}
+
+.banner .contentBanner p {
+    padding: 30px 0px;
+}
