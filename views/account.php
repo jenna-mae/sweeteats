@@ -37,9 +37,7 @@
                                 <?php
                             }
                         } else {
-                            ?>
-                            <p>You haven't placed any orders yet.</p>
-                            <?php
+                            echo"<p>You havent placed any orders yet.</p>";
                         }
                     ?>
                 </div>
@@ -53,6 +51,34 @@
                     <a href="index.php?controller=user&action=manageAccount" class="secondary">Manage Account</a>
                 </div>
             </div>
+        </div>
+        <div class="banner">
+            <h3>Recommended For You</h3>
+            <?php
+                $dietValue = User::getDiet();
+            ?>
+            <?php
+                if($dietValue["id"] != NULL) {
+                    ?>
+                    <h4>Based On Your Dietary Preference: <span><?=$dietValue["name"]?></span></h4>
+                    <div class="recents">
+                        <?php
+                            $results = User::recommendedProducts($dietValue["id"]);
+                            foreach($results as $result) {
+                        ?>
+                        <div class="recent">
+                            <a href="index.php?controller=pages&action=productDetails&productId=<?=$result->id?>"><img src="imgs/<?=$result->image?>" alt="sweeteats product"></a>
+                            <p><?=$result->name?></p>
+                        </div>
+                    <?php
+                    }
+                    ?>
+                        </div>
+                    <?php
+                } else {
+                    echo"<p>You do not have dietary preferences set. Go to 'manage account' to set them.</p>";
+                }
+                ?>
         </div>
         <div class="banner">
             <h3>Recently Ordered Items</h3>

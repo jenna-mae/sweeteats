@@ -2,7 +2,7 @@
 
 class Db {
     static public function connect() {
-        $configArray = parse_ini_file("../../ecom.ini");
+        $configArray = parse_ini_file("../../../ecom.ini");
         $host = $configArray['host'];
         $username = $configArray['username'];
         $password = $configArray['password'];

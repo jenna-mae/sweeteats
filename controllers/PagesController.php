@@ -17,6 +17,7 @@ class PagesController extends Controller {
         $this->state["mainNav"] = $this->loadView("nav");
         $this->state["ctaBanner"] = $this->loadView("ctaBanner");
         $this->state["content"] = $this->loadView("home");
+        $this->state["functions"] = "<script>new Scroll();</script>";
 
         $this->state["html"] = $this->loadView("template");
     }
@@ -44,7 +45,7 @@ class PagesController extends Controller {
         $this->state["footer"] = $this->loadView("footer");
         $this->state["content"] = $this->loadView("nav");
         $this->state["content"] .= $this->loadView("shop");
-        
+        $this->state["functions"] = "<script>new Sort(); new Filter(); new PageHeight();</script>";
 
         $this->state["html"] = $this->loadView("template");
     }
@@ -63,6 +64,7 @@ class PagesController extends Controller {
         $this->state["footer"] = $this->loadView("footer");
         $this->state["content"] = $this->loadView("nav");
         $this->state["content"] .= $this->loadView("productDetails");
+        $this->state["functions"] = "<script>new ProductImages(); new Quantity();</script>";
 
         $this->state["html"] = $this->loadView("template");
     }
@@ -78,7 +80,7 @@ class PagesController extends Controller {
         $this->state["content"] = $this->loadView("nav");
         $this->state["ctaBanner"] = $this->loadView("ctaBanner");
         $this->state["content"] .= $this->loadView("howItWorks");
-        
+        $this->state["functions"] = "";
 
         $this->state["html"] = $this->loadView("template");
     }
@@ -94,6 +96,7 @@ class PagesController extends Controller {
         $this->state["content"] = $this->loadView("nav");
         $this->state["ctaBanner"] = $this->loadView("ctaBanner");
         $this->state["content"] .= $this->loadView("about");
+        $this->state["functions"] = "";
 
         $this->state["html"] = $this->loadView("template");
     }
@@ -102,7 +105,8 @@ class PagesController extends Controller {
         $this->state["browserTitle"] = "Error";
         $this->state["errorMsg"] = "Action Not Found";
         $this->state["css"] = "<link rel='stylesheet' type='text/css' href='css/error.css'>";
-
+        $this->state["functions"] = "";
+        
         $this->state["content"] = $this->loadView("error");
 
         $this->state["html"] = $this->loadView("template");

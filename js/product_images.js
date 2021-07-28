@@ -12,5 +12,3 @@ const ProductImages = function() {
         })
     })
 }
-
-new ProductImages();

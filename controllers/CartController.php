@@ -11,7 +11,8 @@ class CartController extends Controller {
             $this->state["footer"] = $this->loadView("footer");
             $this->state["content"] = $this->loadView("nav");
             $this->state["content"] .= $this->loadView("checkout");
-    
+            $this->state["functions"] = "";
+
             $this->state["html"] = $this->loadView("template");
         } else {
             header("location: index.php?controller=cart&action=showCart&error");
@@ -42,6 +43,7 @@ class CartController extends Controller {
         $this->state["footer"] = $this->loadView("footer");
         $this->state["content"] = $this->loadView("nav");
         $this->state["content"] .= $this->loadView("cartDisplay");
+        $this->state["functions"] = "<script>new Quantity();</script>";
 
         $this->state["html"] = $this->loadView("template");
     }
@@ -50,7 +52,8 @@ class CartController extends Controller {
         $this->state["browserTitle"] = "Error";
         $this->state["errorMsg"] = "Action Not Found";
         $this->state["css"] = "<link rel='stylesheet' type='text/css' href='css/error.css'>";
-
+        $this->state["functions"] = "";
+        
         $this->state["content"] = $this->loadView("error");
 
         $this->state["html"] = $this->loadView("template");

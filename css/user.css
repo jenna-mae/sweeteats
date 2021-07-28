@@ -11,6 +11,17 @@ h1 {
     color: #534741;
 }
 
+h4 {
+    font-weight: 300;
+    font-size: 13px;
+    font-style: italic;
+    padding-bottom: 10px;
+}
+
+h4 span {
+    font-weight: 500;
+}
+
 .login h1 {
     padding-top: 0px;
 }
@@ -87,7 +98,7 @@ a.forgotPass {
 
 .account .banner {
     border-bottom: 1px solid #E8DFD9;
-    padding: 20px 0px;
+    padding: 40px 0px;
 }
 
 .orderHistory {
@@ -321,7 +332,7 @@ a.goBack {
     }
     
     .recent  {
-        width: 23%;
+        width: 18%;
         padding-right: 40px;
         padding-top: 6px;
     }

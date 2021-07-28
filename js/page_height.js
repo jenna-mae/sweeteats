@@ -11,5 +11,3 @@ const PageHeight = function() {
 
     page.init();
 }
-
-new PageHeight();
