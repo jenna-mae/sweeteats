@@ -63,5 +63,3 @@ const Quantity = function() {
 
     q.init();
 }
-
-new Quantity(document.querySelector(".adjustQty"));

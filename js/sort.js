@@ -9,10 +9,3 @@ const Sort = function() {
     })
 }
 
-new Sort();
-
-// TRY AS JQUERY
-
-// const Sort = () => {
-//     $(this).
-// }

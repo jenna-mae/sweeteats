@@ -10,7 +10,7 @@ class UserController extends Controller {
         $this->state["footer"] = $this->loadView("footer");
         $this->state["nav"] = $this->loadView("nav");
         $this->state["content"] = $this->loadView("login");
-        
+        $this->state["functions"] = "<script>new Validator ();</script>";
 
         $this->state["html"] = $this->loadView("template");
     }
@@ -23,6 +23,7 @@ class UserController extends Controller {
         $this->state["footer"] = $this->loadView("footer");
         $this->state["nav"] = $this->loadView("nav");
         $this->state["content"] = $this->loadView("enterEmail");
+        $this->state["functions"] = "<script>new Validator ();</script>";
         
 
         $this->state["html"] = $this->loadView("template");
@@ -36,6 +37,7 @@ class UserController extends Controller {
         $this->state["footer"] = $this->loadView("footer");
         $this->state["nav"] = $this->loadView("nav");
         $this->state["content"] = $this->loadView("newPassword");
+        $this->state["functions"] = "<script>new Validator ();</script>";
         
         $this->state["html"] = $this->loadView("template");
     }
@@ -48,6 +50,7 @@ class UserController extends Controller {
         $this->state["footer"] = $this->loadView("footer");
         $this->state["nav"] = $this->loadView("nav");
         $this->state["content"] = $this->loadView("pendingReset");
+        $this->state["functions"] = "";
         
         $this->state["html"] = $this->loadView("template");
     }
@@ -65,6 +68,7 @@ class UserController extends Controller {
         $this->state["footer"] = $this->loadView("footer");
         $this->state["nav"] = $this->loadView("nav");
         $this->state["content"] = $this->loadView("register");
+        $this->state["functions"] = "<script>new Validator ();</script>";
 
         $this->state["html"] = $this->loadView("template");
     }
@@ -79,6 +83,7 @@ class UserController extends Controller {
 
         $this->state["footer"] = $this->loadView("footer");
         $this->state["content"] .= $this->loadView("account");
+        $this->state["functions"] = "";
 
         $this->state["html"] = $this->loadView("template");
     }
@@ -92,6 +97,7 @@ class UserController extends Controller {
 
         $this->state["footer"] = $this->loadView("footer");
         $this->state["content"] .= $this->loadView("manageAccount");
+        $this->state["functions"] = "";
 
         $this->state["html"] = $this->loadView("template");
     }
@@ -105,6 +111,7 @@ class UserController extends Controller {
 
         $this->state["footer"] = $this->loadView("footer");
         $this->state["content"] .= $this->loadView("viewInvoice");
+        $this->state["functions"] = "";
 
         $this->state["html"] = $this->loadView("template");
     }
@@ -113,7 +120,8 @@ class UserController extends Controller {
         $this->state["browserTitle"] = "Error";
         $this->state["errorMsg"] = "Action Not Found";
         $this->state["css"] = "<link rel='stylesheet' type='text/css' href='css/error.css'>";
-
+        $this->state["functions"] = "";
+        
         $this->state["content"] = $this->loadView("error");
 
         $this->state["html"] = $this->loadView("template");

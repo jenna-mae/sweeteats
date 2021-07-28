@@ -40,6 +40,22 @@
                             <option name="canada" value="Canada" selected>Canada</option>
                         </select>
                     </div>
+                    <div class="fieldset half">
+                        <?php
+                            $categories = AllProducts::getCategories();
+                        ?>
+                        <select name="diet">
+                        <option name="" value="">Choose One</option>
+                            <?php
+                                foreach($categories as $category){
+                                $isSelected = ($this->state["user"]["dietPrimary"] == $category["id"]) ? 'selected' : '';
+                            ?>
+                            <option value="<?=$category["id"]?>" <?=$isSelected?>><?=$category["name"]?></option>
+                            <?php
+                                }
+                            ?>
+                        </select>
+                    </div>
                     <div class="submit ctaPrimary">
                         <input type="submit" value="Save Changes" class="primary">
                     </div>

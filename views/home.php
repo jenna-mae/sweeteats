@@ -17,10 +17,10 @@
     </div>
 </div>
 
-<div class="content" id="contentTop home">
+<div class="content" id="home">
     <div class="banner topBanner">
         <div class="wrapper">
-            <h1>How It Works</h1>
+            <h1 id="contentTop">How It Works</h1>
             <h2 class="highlight">Sweeteats makes gourmet baking easy. We pre-measure quality ingredients, share our original recipes, and reveal how to style your confections like a pro.</h2>
             <div class="flex howItWorks">
                 <div class="flexBlock">

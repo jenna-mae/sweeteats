@@ -2,6 +2,21 @@
 
 class User {
 
+    static public function recommendedProducts($id) {
+        $products = Db::getAllEntries("SELECT c.id AS catID, p.*, c.name FROM categorieslinks cl LEFT JOIN categories c ON c.id=cl.categoriesId LEFT JOIN products p ON p.id=cl.productsId WHERE c.id = '".$id."' LIMIT 5");
+        $productsArray = array();
+        foreach($products as $product) {
+            $product = Product::get($product["id"]);
+            $productsArray[] = $product;
+        }
+        return($productsArray);
+    }
+
+    static public function getDiet() {
+        $dietPrimary = Db::getSingleEntry("SELECT categories.id, categories.name FROM users LEFT JOIN categories ON users.dietPrimary = categories.id WHERE users.id='".$_SESSION["id"]."'");
+        return $dietPrimary;
+    }
+
     static public function recentlyOrdered() {
         $products = Db::getAllEntries("SELECT invoice_items.productId FROM invoices LEFT JOIN users on invoices.usersId=users.id LEFT JOIN invoice_items on invoices.invoice_number=invoice_items.invoice_number WHERE users.id=".$_SESSION["id"]);
         $productsArray = array();
@@ -17,12 +32,13 @@ class User {
         return $orders;
     }
 
-    static public function accountInfo($id, $email, $password, $encPass, $firstName, $lastName, $company, $address, $suite, $city, $province, $country, $postal) {
+    static public function accountInfo($id, $email, $password, $encPass, $firstName, $lastName, $company, $address, $suite, $city, $province, $country, $postal, $diet) {
         if($id == "") {
             Db::doQuery("INSERT INTO users (email, firstname, lastname, password, company, address, suite, city, province, country, postal) VALUES ('".$email."', '".$firstName."', '".$lastName."', '".$encPass."', '".$company."', '".$address."', '".$suite."', '".$city."', '".$province."', '".$country."', '".$postal."')");
             User::doLogin($email, $password);
         } else {
-            Db::doQuery("UPDATE users SET email='".$email."', firstName='".$firstName."', lastName='".$lastName."', company='".$company."', address='".$address."', suite='".$suite."', city='".$city."', province='".$province."', country='".$country."', postal='".$postal."' WHERE id='".$id."'");
+            // echo("UPDATE users SET email='".$email."', firstName='".$firstName."', lastName='".$lastName."', company='".$company."', address='".$address."', suite='".$suite."', city='".$city."', province='".$province."', country='".$country."', postal='".$postal."', dietPrimary='".$diet."' WHERE id='".$id."'");
+            Db::doQuery("UPDATE users SET email='".$email."', firstName='".$firstName."', lastName='".$lastName."', company='".$company."', address='".$address."', suite='".$suite."', city='".$city."', province='".$province."', country='".$country."', postal='".$postal."', dietPrimary='".$diet."' WHERE id='".$id."'");
         }
     }
     
@@ -76,6 +92,7 @@ class User {
             $userDetails["province"] = "";
             $userDetails["country"] = "";
             $userDetails["postal"] = "";
+            $userDetails["dietPrimary"] = "";
             return $userDetails;
         }
     }

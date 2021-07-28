@@ -29,7 +29,6 @@
 <body>
 
     <?=$this->state["content"]?>
-    
     <script src="http://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script type="text/javascript" src="js/product_images.js"></script>
     <script type="text/javascript" src="js/adjust_quantity.js"></script>
@@ -39,5 +38,6 @@
     <script type="text/javascript" src="js/confirm_password.js"></script>
     <script type="text/javascript" src="js/form_validator.js"></script>
     <script type="text/javascript" src="js/page_height.js"></script>
+    <?=$this->state["functions"]?>
 </body>
 </html>

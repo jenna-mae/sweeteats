@@ -32,7 +32,7 @@
                                     <input type="hidden" name="productId" value="<?=$product->id?>">
                                     <div class="options">
                                         <button class="addBtn sendOK"><i class="fas fa-plus"></i></button>
-                                        <input type="number" value="<?=Cart::productQuantity($product->id)?>" name="quantity" class="qtyAmount">
+                                        <input type="text" value="<?=Cart::productQuantity($product->id)?>" name="quantity" class="qtyAmount" readonly>
                                         <button class="subtractBtn sendOK"><i class="fas fa-minus"></i></button>
                                     </div>
                                     <div class="remove">

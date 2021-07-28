@@ -7,5 +7,3 @@ const Filter = function() {
         filter.element.classList.toggle("activeFilter");
     })
 }
-
-new Filter();

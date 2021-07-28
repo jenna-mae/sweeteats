@@ -1,4 +1,4 @@
-const Validator = function(formClass) {
+const Validator = function() {
     const validator = this;
     validator.form = document.querySelector(".requiredForm");
     validator.bDisplayError = false;
@@ -26,5 +26,3 @@ const Validator = function(formClass) {
         }
     })
 }
-
-new Validator (document.querySelector(".requiredForm"));

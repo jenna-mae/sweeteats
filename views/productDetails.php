@@ -41,7 +41,7 @@
                             <span class="flex">QTY</span>
                             <div class="options flex">
                                 <button class="addBtn"><i class="fas fa-plus"></i></button>
-                                <input type="number" value="" name="quantity" class="qtyAmount">
+                                <input type="text" value="" name="quantity" class="qtyAmount" readonly>
                                 <button class="subtractBtn"><i class="fas fa-minus"></i></button>
                             </div>
                             <div class="ctaPrimary">

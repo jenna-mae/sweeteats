@@ -53,7 +53,8 @@ class FormController extends Controller {
         $country = $_POST["country"];
         $postal = $_POST["postal"];
         $blankPass = "";
-        User::accountInfo($id, $email, $blankPass, $blankPass, $firstName, $lastName, $company, $address, $suite, $city, $province, $country, $postal);
+        $diet = $_POST["diet"];
+        User::accountInfo($id, $email, $blankPass, $blankPass, $firstName, $lastName, $company, $address, $suite, $city, $province, $country, $postal, $diet);
         header("location: index.php?controller=user&action=account&updated=true");
     }
 
@@ -141,7 +142,8 @@ class FormController extends Controller {
         $this->state["browserTitle"] = "Error";
         $this->state["errorMsg"] = "Action Not Found";
         $this->state["css"] = "<link rel='stylesheet' type='text/css' href='css/error.css'>";
-
+        $this->state["functions"] = "";
+        
         $this->state["content"] = $this->loadView("error");
 
         $this->state["html"] = $this->loadView("template");
