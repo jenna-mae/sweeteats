@@ -72,8 +72,9 @@ class FormController extends Controller {
         $province = $_POST["province"];
         $country = $_POST["country"];
         $postal = $_POST["postal"];
+        $diet = $_POST["diet"];
 
-        User::accountInfo($id, $email, $password, $encPass, $firstName, $lastName, $company, $address, $suite, $city, $province, $country, $postal);
+        User::accountInfo($id, $email, $password, $encPass, $firstName, $lastName, $company, $address, $suite, $city, $province, $country, $postal, $diet);
         
         $number = Invoice::generateInvoiceNumber();
         Invoice::recordInvoiceItem($number);
