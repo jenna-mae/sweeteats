@@ -7,7 +7,7 @@ Sweeteats is an E-Commerce site for a meal kit delivery service.
 PHP, JavaScript, HTML5, CSS3, MySQL
 
 ## Screenshots
-![](imgs/shop.png)
+![](imgs/shop.png =100x20)
 *image_caption*
 
 <img src="imgs/shop.png" width="300">   <img src="imgs/product.png" width="300">
