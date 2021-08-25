@@ -11,7 +11,7 @@ PHP, JavaScript, HTML5, CSS3, MySQL
 *image_caption*
 
 <img src="imgs/shop.png" width="300">   <img src="imgs/product.png" width="300">
-
+*image_caption*                         *image_caption*
 <img src="imgs/cart.png" width="300">   <img src="imgs/checkout.png" width="300">
 
 <img src="imgs/account.png" width="300">
