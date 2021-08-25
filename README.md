@@ -1,6 +1,14 @@
 # sweeteats
 
 Sweeteats is an E-Commerce site for a meal kit delivery service.
+- Filter / Sort Products
+- Add / Adjust Cart
+- Checkout
+- Register / Login
+- View Past Orders
+- Recommended Products
+- Edit Account
+- Form Validation
 
 ## Technologies Used
 
