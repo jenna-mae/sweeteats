@@ -37,7 +37,6 @@ class User {
             Db::doQuery("INSERT INTO users (email, firstname, lastname, password, company, address, suite, city, province, country, postal) VALUES ('".$email."', '".$firstName."', '".$lastName."', '".$encPass."', '".$company."', '".$address."', '".$suite."', '".$city."', '".$province."', '".$country."', '".$postal."')");
             User::doLogin($email, $password);
         } else {
-            // echo("UPDATE users SET email='".$email."', firstName='".$firstName."', lastName='".$lastName."', company='".$company."', address='".$address."', suite='".$suite."', city='".$city."', province='".$province."', country='".$country."', postal='".$postal."', dietPrimary='".$diet."' WHERE id='".$id."'");
             Db::doQuery("UPDATE users SET email='".$email."', firstName='".$firstName."', lastName='".$lastName."', company='".$company."', address='".$address."', suite='".$suite."', city='".$city."', province='".$province."', country='".$country."', postal='".$postal."', dietPrimary='".$diet."' WHERE id='".$id."'");
         }
     }
