@@ -169,6 +169,17 @@
                         </div>
                         <input type="text" placeholder="CVV" class="required">
                     </div>
+                    <?php
+                    if($user["dietPrimary"] == NULL) {
+                        ?>
+                        <input type="hidden" value="" name="diet">
+                        <?php
+                    } else {
+                        ?>
+                        <input type="hidden" value="<?=$user["dietPrimary"]?>" name="diet">
+                        <?php
+                    }
+                    ?>
                 </div>
                 <input type="submit" value="Complete Purchase" class="primary half submitForm">
                 <div class="returnToCart">
