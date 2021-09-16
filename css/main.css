@@ -3,7 +3,7 @@
     background-size: cover;
     background-position: left;
     background-repeat: no-repeat;
-    height: 95vh;
+    height: 100vh;
     position: relative;
 }
 
@@ -20,7 +20,7 @@
     left: 50%;
     transform: translate(-50%,-50%);
     text-align: center;
-    margin-top: 40px;
+    margin-top: 20px;
     color: #615342;
 }
 
@@ -33,9 +33,8 @@
 .hero header p {
     padding: 22px 0px;
     font-size: 16px;
-    line-height: 22px;
-    font-family: 'Merriweather', serif;
-    font-weight: 300;
+    line-height: 26px;
+    font-weight: 400;
 }
 
 .hero .readMore {
@@ -98,11 +97,15 @@
 }
 
 .banner h1 {
-    padding-bottom: 30px;
+    padding-bottom: 20px;
     font-weight: 400;
     font-size: 26px;
     text-transform: uppercase;
     color: #534741;
+}
+
+.banner h1.solo {
+    padding-bottom: 60px;
 }
 
 .banner:first-child h1 {
@@ -114,7 +117,6 @@
     font-size: 14px;
     padding-bottom: 40px;
     font-weight: 300;
-    font-family: 'Merriweather', serif;
     line-height: 26px;
 }
 
@@ -129,8 +131,7 @@
     font-size: 14px;
     padding-bottom: 30px;
     color: #534741;
-    font-family: 'Merriweather', serif;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 24px;
 }
 
@@ -150,7 +151,7 @@ span.step h3 {
 
 .howItWorks img {
     height: 100px;
-    margin: 30px 0px;
+    margin: 20px 0px;
 }
 
 .thumbnail {
@@ -202,5 +203,5 @@ a.instagram:hover{
 }
 
 .banner .contentBanner p {
-    padding: 30px 0px;
+    padding: 20px 0px;
 }

@@ -7,17 +7,9 @@ header {
 header h1 {
     font-size: 26px;
     font-weight: 400;
-    padding-bottom: 20px;
+    padding: 20px 0px;
     text-transform: uppercase;
     color: #534741;
-}
-
-header p {
-    font-weight: 200;
-    font-size: 12px;
-    line-height: 23px;
-    font-family: 'Merriweather', serif;
-    color: #BC9362;
 }
 
 .gridContainer {

@@ -21,7 +21,7 @@
     <div class="banner topBanner">
         <div class="wrapper">
             <h1 id="contentTop">How It Works</h1>
-            <h2 class="highlight">Sweeteats makes gourmet baking easy. We pre-measure quality ingredients, share our original recipes, and reveal how to style your confections like a pro.</h2>
+            <h2>Sweeteats makes gourmet baking easy. We pre-measure quality ingredients, share our original recipes, and reveal how to style your confections like a pro.</h2>
             <div class="flex howItWorks">
                 <div class="flexBlock">
                     <span class="step cursive">Step 1</span>
@@ -72,8 +72,7 @@
 
     <div class="banner cat">
         <div class="wrapper">
-            <h1>Shop By Category</h1>
-            <h2 class="highlight">Sweeteats makes gourmet baking easy. We pre-measure quality ingredients, share our original.</h2>
+            <h1 class="solo">Shop By Category</h1>
             <div class="flex categories">
                 <div class="flexBlock thumbnail cat">
                     <img src="imgs/food6.png" alt="photo of baked good">
@@ -126,8 +125,7 @@
 
     <div class="banner">
         <div class="wrapper">
-            <h1>Check Out Our Instagram!</h1>
-            <h2 class="highlight">Sweeteats makes gourmet baking easy. We pre-measure quality ingredients, share our original.</h2>
+            <h1 class="solo">Check Out Our Instagram!</h1>
             <div class="flex instagramBanner">
                 <div class="flexBlock thumbnail insta">
                     <img src="imgs/1insta.png" alt="photo of baked good">
