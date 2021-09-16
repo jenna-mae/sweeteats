@@ -20,12 +20,10 @@
 }
 
 .content .ctaBanner p {
-    font-size: 13px;
-    font-weight: 300;
+    font-size: 14px;
+    font-weight: 400;
     line-height: 24px;
     padding: 24px 0px;
-    color: #BC9362;
-    font-family: 'Merriweather', serif;
 }
 
 @media screen and (min-width: 800px) {

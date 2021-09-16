@@ -11,7 +11,6 @@
                 }
             ?>
             <h1>Shop Baking Kits</h1>
-            <p>Sweeteats is a baking kit service that supplies step-by-step recipe cards & pre-measured ingredients, designed to make the baking experience fun, easy and mess-less, with the convenience of being delivered straight to your door!</p>
         </header>
         <div class="gridContainer">
             <div class="filter">

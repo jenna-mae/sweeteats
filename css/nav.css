@@ -94,7 +94,7 @@
     font-size: 16px;
     display: block;
     padding: 20px 0px 20px 0px;
-    font-weight: 300;
+    font-weight: 400;
     border-bottom: 1px solid #E8DFD9;
     color: #534741;
 }
@@ -189,7 +189,7 @@ a.loggedUser {
 
 @media screen and (min-width: 900px) {
     #navigation .mobileBar {
-        height: 110px;
+        height: 90px;
     }
 
     .logo {
@@ -198,29 +198,17 @@ a.loggedUser {
     }
 
     #navigation .navContainer ul.primary {
-        left: 220px;
+        left: 200px;
     }
 
     #navigation .navContainer ul li a {
-        font-size: 14px;
+        font-size: 15px;
     }
 }
 
 @media screen and (min-width: 1300px) {
     .logo {
-        width: 130px;
-        height: 130px;
-    }
-
-    #navigation .navContainer ul li a {
-        font-size: 16px;
-        padding: 17px 18px;
-        padding-left: 14px;
-    }
-
-    #navigation .navContainer ul li ul.secondary li a {
-        font-size: 16px;
-        padding: 17px 18px;
-        padding-left: 14px;
+        width: 110px;
+        height: 110px;
     }
 }

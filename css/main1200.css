@@ -1,12 +1,12 @@
 @media screen and (min-width: 1200px) {
     .hero header h1 {
-        font-size: 40px;
-        line-height: 52px;
+        font-size: 34px;
+        line-height: 50px;
     }
 
     .hero header p {
         font-size: 18px;
-        line-height: 24px;
+        line-height: 30px;
     }
 
     .wrapper, .topBanner .wrapper {
@@ -15,7 +15,7 @@
 
     .howItWorks img {
         height: 100px;
-        margin: 40px 0px;
+        margin: 20px 0px;
     }
 
     .banner h3 {

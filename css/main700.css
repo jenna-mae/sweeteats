@@ -5,7 +5,7 @@
     }
     
     .hero header p {
-        padding: 22px 60px 30px;
+        padding: 14px 60px 30px;
     }
 
     .wrapper {
@@ -17,7 +17,7 @@
     }
 
     .banner h2 {
-        font-size: 14px;
+        font-size: 16px;
         font-weight: 300;
         width: 80%;
         margin: 0 auto;
