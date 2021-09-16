@@ -242,19 +242,16 @@ p.categories span:last-child {
         margin-bottom: 0px;
         border-bottom: 1px solid #E8DFD9;
     }
-
-    .addToCart {
-        width: fit-content;
-    }
-
+    
     a.cartAdd {
         padding: 10px 15px;
         font-size: 14px;
     }
 
     a.cartAdd:hover {
-        padding: 12px 17px;
-        transition: padding .3s ease;
+        background-color: #8daecf;
+        text-shadow: 0 0 .35px #ffffff, 0 0 .35px #ffffff;
+        transition: all .2s ease;
     }
 
     .product h1 {
@@ -369,10 +366,6 @@ p.categories span:last-child {
 }
 
 @media screen and (min-width: 1100px) {
-    a.cartAdd {
-        display: block;
-    }
-
     .productDetails {
         flex-direction: row;
     }

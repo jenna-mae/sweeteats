@@ -2,7 +2,7 @@
     <div class="overlay">
         <?=$this->state["mainNav"]?>
         <header>
-            <h1>Make Gourmet Desserts</br> in your Home</h1>
+            <h1>Make Gourmet</br>Desserts in your Home</h1>
             <p>Step by step recipes and pre-measured</br> ingredients right to your door!</p>
             <div class="ctaPrimary">
                 <a href="index.php?controller=pages&action=shop" class="primary">Shop Baking Kits</a>

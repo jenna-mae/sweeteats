@@ -46,8 +46,15 @@ a.primary, input[type="submit"].primary {
     margin: 14px 0px;
 }
 
-a.primary:hover {
+/* a.primary:hover {
     padding: 17px 39px;
+    transition: all .2s ease;
+} */
+
+a.primary:hover {
+    background-color: #7ea6ce;
+    text-shadow: 0 0 .35px #ffffff, 0 0 .35px #ffffff;
+    font-size: 16px;
     transition: all .2s ease;
 }
 
@@ -57,10 +64,8 @@ a.secondary {
 }
 
 a.secondary:hover {
-    color: #5791ca;
-    font-weight: 500;
+    text-shadow: 0 0 .35px #6699CC, 0 0 .35px #6699CC;
     transition: all .3s ease;
-    font-style: italic;
 }
 
 .highlight {
