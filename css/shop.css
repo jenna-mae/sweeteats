@@ -1,3 +1,7 @@
+.wrapper.shopProducts {
+    padding: 0px 20px;
+}
+
 header {
     text-align: center;
     margin: 0 auto;
@@ -13,7 +17,14 @@ header h1 {
 }
 
 .gridContainer {
+    display: flex;
+    flex-direction: column;
     position: relative;
+}
+
+.rightSection {
+    display: flex;
+    flex-direction: column;
 }
 
 li a {
@@ -46,14 +57,16 @@ li a:hover{
     justify-content: flex-end;
     flex-direction: row;
     align-items: center;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border: 1px solid #E8DFD9;
+    border-bottom: none;
 }
 
 .sort, .filter {
-    position: absolute;
-    top: 0px;
     width: 100%;
     height: 50px;
-    border: 1px solid #E8DFD9;
     display: flex;
     padding: 0px 10px;
 }
@@ -95,9 +108,11 @@ li a:hover{
     background-color: white;
     z-index: 100;
     display: none;
-    width: 50%;
+    width: 60%;
     padding: 20px;
-    border: 2px solid #E8DFD9;
+    border: 1px solid #E8DFD9;
+    margin-left: -10px;
+    margin-top: 10px;
 }
 
 a.clear {
@@ -113,16 +128,13 @@ a.clear {
 }
 
 .products {
-    position: absolute;
-    top: 50px;
-    right: 0px;
     border: 1px solid #E8DFD9;
-    padding: 40px;
+    padding: 30px;
 }
 
 .product {
-    padding-bottom: 50px;
-    margin-bottom: 50px;
+    padding-bottom: 30px;
+    margin-bottom: 34px;
     border-bottom: 1px solid #E8DFD9;
 }
 
@@ -135,7 +147,7 @@ a.clear {
 
 .product h1 {
     font-weight: 400;
-    font-size: 22px;
+    font-size: 20px;
 }
 
 .product h1 a {
@@ -145,7 +157,7 @@ a.clear {
 .product p {
     font-style: italic;
     font-weight: 300;
-    font-size: 14px;
+    font-size: 12px;
     padding: 6px 0px;
 }
 
@@ -166,9 +178,9 @@ span.price {
 a.cartAdd {
     background-color: #6699CC;
     color: white;
-    padding: 12px 26px;
+    padding: 8px 16px;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 14px;
     text-transform: uppercase;
     display: block;
 }
@@ -208,6 +220,12 @@ p.categories span:last-child {
     font-size: 16px;
     font-family: montserrat;
     font-weight: 300;
+}
+
+@media screen and (min-width: 500px){
+    .wrapper.shopProducts {
+        padding: 0px 60px;
+    }
 }
 
 @media screen and (min-width: 600px){ 
@@ -285,20 +303,26 @@ p.categories span:last-child {
 
 @media screen and (min-width: 900px) {
 
+    .gridContainer {
+        flex-direction: row;
+    }
+
+    .sort {
+        position: static;
+        border-bottom: 1px solid #E8DFD9;
+    }
+
     a.filterBtn {
         display: none;
     }
 
     .filter {
         display: block;
-        position: absolute;
-        top: 0px;
-        left: 0px;
-        height: 100vh;
+        height: max-content;
         width: 20%;
         border: 1px solid #E8DFD9;
         border-right: 0px;
-        padding: 16px;
+        padding: 32px 66px 32px 32px;
     }
 
     .filterOptions {
@@ -306,16 +330,18 @@ p.categories span:last-child {
         width: 100%;
         padding: 0px;
         border: 0px;
+        margin-left: 0px;
     }
 
     .filter h2 {
         display: block;
         color: #534741;
-        font-weight: 500;
-        font-size: 16px;
-        text-transform: uppercase;
+        font-weight: 300;
+        font-size: 18px;
         border-bottom: 1px solid #E8DFD9;
-        padding: 10px 0px 14px;
+        padding: 0px 32px 23px;
+        margin-left: -32px;
+        margin-right: -66px;
     }
 
     .filter h3 {
@@ -334,10 +360,6 @@ p.categories span:last-child {
     .products {
         padding: 0px 20px;
         border-top: 0px;
-    }
-
-    .product {
-        width: 33.33%;
     }
 
     .productWrapper {
@@ -359,10 +381,6 @@ p.categories span:last-child {
     .hide-lrg {
         display: none;
     }
-
-    .products, .sort {
-        width: 80%;
-    }
 }
 
 @media screen and (min-width: 1100px) {
@@ -372,5 +390,9 @@ p.categories span:last-child {
 
     .productFlex {
         padding-right: 8px;
+    }
+
+    .product {
+        width: 33.33%;
     }
 }
